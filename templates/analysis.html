@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        body {
+            background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAA1BMVEX87sfeWT4fAAAAR0lEQVR4nO3BAQEAAACCIP+vbkhAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAO8GxYgAAb0jQ/cAAAAASUVORK5CYII="); /* The image used */
+            background-color: #cccccc; /* Used if the image is unavailable */
+            height: 800px; /* You must set a specified height */
+            background-position: center; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: cover; /* Resize the background image to cover the entire container */
+        }
+        .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        
+       } 
+       .btn1 {
+        
+        border: none;
+        background: #404040;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: block;
+        transition: all 0.3s ease 0s;
+        width: 250px;
+        justify-content: center;
+        
+        margin-top: 30px;
+
+        }
+        
+
+        .btn1:hover {
+            color: #404040 !important;
+            font-weight: 700 !important;
+            letter-spacing: 3px;
+            background: none;
+            -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.3s ease 0s;
+        } 
+
+        .btn2 {
+        
+        border: none;
+        background: #404040;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: block;
+        transition: all 0.3s ease 0s;
+        width: 250px;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 120px;
+
+    }
+
+
+    .btn2:hover {
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: none;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    } 
+    .btn3 {
+        
+        border: none;
+        background: #404040;
+        color: #ffffff !important;
+        font-weight: 100;
+        padding: 20px;
+        text-transform: uppercase;
+        border-radius: 6px;
+        display: block;
+        transition: all 0.3s ease 0s;
+        width: 250px;
+        justify-content: center;
+        margin-top: 20px;
+        margin-bottom: 200px;
+
+    }
+
+
+    .btn3:hover {
+        color: #404040 !important;
+        font-weight: 700 !important;
+        letter-spacing: 3px;
+        background: none;
+        -webkit-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        -moz-box-shadow: 0px 5px 40px -10px rgba(0,0,0,0.57);
+        transition: all 0.3s ease 0s;
+    } 
+    </style>
+    <body>
+        <h1><p style="text-align:center;">Analysis Tool</p></h1>
+        <form method="post" action="/analysis">
+            <div class="center">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Company 1</label>
+                    </div>
+                    <select class="btn1" id="inputGroupSelect01" name='action2' oninvalid="alert('Please select a option from the list');" pattern="^[Choose...]" >
+                    <option selected>Choose...</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="ford">Ford</option>
+                    <option value="general_motors">General_motors</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="renault">Renault</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    </select>
+                </div>
+            </div>
+            <div class="center">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <label class="input-group-text" for="inputGroupSelect01">Company 2</label>
+                    </div>
+                    <select class="btn2" id="inputGroupSelect01" name="action3" oninvalid="alert('Please select a option from the list');" pattern="^[Choose...]">
+                    <option selected>Choose...</option>
+                    <option value="fiat">Fiat</option>
+                    <option value="ford">Ford</option>
+                    <option value="general_motors">General_motors</option>
+                    <option value="honda">Honda</option>
+                    <option value="hyundai">Hyundai</option>
+                    <option value="nissan">Nissan</option>
+                    <option value="renault">Renault</option>
+                    <option value="suzuki">Suzuki</option>
+                    <option value="toyota">Toyota</option>
+                    <option value="volkswagen">Volkswagen</option>
+                    </select>
+                </div>
+            </div>
+            <div class="center">
+                <input type="submit" value="Submit" name="action4" class="btn3"/>
+            </div>
+        </form>
+    </body>
+</html>
